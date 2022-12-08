@@ -1,0 +1,208 @@
+/* Загальні налаштування */
+*{
+    margin: 0;
+    padding: 0;
+}
+.fons{
+    background-image: url(../foto/cloud.jpg);
+    width: 1334px;
+}
+.section_marg{
+    margin-top: 50px;
+}
+.section_marg_bott{
+    margin-bottom: 30px;
+}
+h1, h3{
+    color: darkblue;
+}
+h4{
+    color: red;
+}
+.colorBlok{
+    background-color: rgba(0, 162, 255, 0.062);
+}
+.cont{
+    margin-top: 30px;
+}
+.fotos{
+    margin: 20px;
+}
+
+/* Карусель */
+.pp{
+    color:rgb(20, 214, 2);
+    font-size: xx-large;
+    font-weight: bolder;  
+    text-shadow: #000 2px 0px 2px, #000 0px 2px 2px, #000 0px -2px 2px, #000 -2px 0px 2px; 
+}
+
+/* Переклад */
+.nav-item-lang-en,
+.nav-item-lang-ua,
+.nav-item-lang-de{   
+    background-size:cover;
+}
+.translate{
+    background-color: transparent;
+    border: none;
+    margin: 5px 0 0 10px;
+}
+
+/* Index */
+.partners{
+    height: 100px;
+    width: 160px;
+    margin-top: 10px;
+}
+
+/* Фома відправки листів */
+.form_send{
+    margin-top: 80px;
+    text-align: center; 
+}
+.form_send label{
+    font-weight: bold;
+}
+.form_send h3{
+    color: #2d4dda;
+}
+
+/* Footer */
+.footer_text{
+    color: coral;
+}
+.communication{
+    margin-top: 80px;
+}
+.communication button{
+    margin-top: 20px;
+}
+.footer_text_author{
+   margin-left: 70%;
+}
+
+/* Донати */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+
+.card {
+    max-width: 500px;
+    margin: 20px auto;
+    color: black;
+    border-radius: 20 px;
+
+}
+p {
+    margin: 0px;
+}
+.container .h8 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.btn.btn-primary {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    border: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+.btn.btn.btn-primary:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+.btn.btn-primary:hover .fas.fa-arrow-right {
+    transform: translate(15px);
+    transition: transform 0.2s ease-in;
+}
+.form-control {
+    color: white;
+    background-color: #223C60;
+    border: 2px solid transparent;
+    height: 60px;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+.form-control:focus {
+    color: white;
+    background-color: #0C4160;
+    border: 2px solid #2d4dda;
+    box-shadow: none;
+}
+.text {
+    font-size: 14px;
+    font-weight: 600;
+}
+::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Екран - телефон */
+@media screen and (max-width: 400px){
+    .navbar navbar-expand-lg navbar-light bg-light fixed-top{
+        width: 400px;
+    } 
+    .footer_text_author{
+        margin: 0 auto;
+    }  
+}
+
+/* Зворотня форма */
+.form{
+    /* border: 1px red solid; */
+    margin: 0 auto;
+   
+}
+.form_body{
+    margin-top: 20px;
+    position: relative;
+}
+.form_body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../foto/1-Gmail-Loading-Animation.gif) center / 200px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+.form_body._sending::after{
+    opacity: 1;
+    visibility: visible;
+}
+.form_item{
+    margin-top: 15px;
+}
+.form_label{
+    display: block;
+}
+.form_button{
+    width: 150px;
+    background-color: cornflowerblue;
+    border-radius: 7px;
+    border: none;
+    color: red;
+    box-shadow: 0 2px 0 black;
+}
+.form_input{
+    transition: all 0.5s ease 0s;
+}
+.form_input:focus{
+    box-shadow: 0 0  15px chartreuse;
+}
+.form_input._error {
+    box-shadow: 0 0 15px red;
+}
